@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .student-login-left {
+    width: 60%;
+  }
+  
+  .student-login-right {
+    width: 40%;
+  }
+  
+  #logo {
+    height: 80px;
+  }
+  
+  form {
+    display: flex;
+  }
