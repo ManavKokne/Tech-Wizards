@@ -5,10 +5,10 @@ passwordVisibilityImg.addEventListener("click", () => {
     const isPasswordVisible = passwordInput.type === "text";
 
     if (isPasswordVisible) {
-        passwordVisibilityImg.setAttribute("src", "eye-closed.svg");
+        passwordVisibilityImg.setAttribute("src", "Assets/eye-closed.svg");
         passwordInput.setAttribute("type", "password");
     } else {
-        passwordVisibilityImg.setAttribute("src", "eye-open.svg");
+        passwordVisibilityImg.setAttribute("src", "Assets/eye-open.svg");
         passwordInput.setAttribute("type", "text");
     }
 });
