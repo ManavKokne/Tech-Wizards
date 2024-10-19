@@ -22,7 +22,7 @@ This project is a **mentorship platform** designed to connect students of SLIET 
 This mentorship platform aims to enhance **student-faculty interactions** by providing a seamless system for **personalized guidance**, helping students achieve academic success and professional growth.  
 
 ## Live Demo  
-- **Deployed Website:** [Live Website](https://<your-team-name>.github.io/SLIET-Mentorship-Platform)  
+- **Deployed Website:** [Live Website](https://Tech-Wizards.github.io/SLIET-Mentorship-Platform)  
 
 ---
 
