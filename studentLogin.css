@@ -7,7 +7,7 @@
 }
 
 .student-login-left {
-  background-image: url('/Assets/mentor.jpeg');
+  background-image: url('Assets/mentor.jpeg');
   position: sticky;
   top: 0;
   height: 100%;
