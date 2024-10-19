@@ -1,0 +1,352 @@
+/* Reset default margins */
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 1px 1px 5px #adadad;
+    background-color: white;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+#logo {
+    width: 50px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar>label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-icon {
+    margin: 10px;
+    height: 20px;
+    position: relative;
+    right: 45px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 500px;
+    border-radius: 20px;
+    border: 1px solid #3d3d3d;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.notification,
+.profile {
+    position: relative;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* Dropdowns hidden by default */
+.notification-dropdown,
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.notification-dropdown p,
+.profile-dropdown a {
+    padding: 10px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    width: 175px;
+}
+
+.profile-dropdown a:hover,
+.notification-dropdown p:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.notification.active .notification-dropdown,
+.profile.active .profile-dropdown {
+    display: block;
+}
+
+/* Notification bell icon */
+#notification-icon {
+    height: 1.5em;
+}
+
+#logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fc2828;
+}
+
+#logout-door {
+    height: 20px;
+}
+
+/* Filter Section */
+#filter-section {
+    background-color: black;
+    margin: 1em;
+    padding: 20px 25px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    margin-top: 15px;
+}
+
+#filter-icon {
+    display: none;
+    height: 2em;
+    cursor: pointer;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 150px;
+}
+
+.filter-item label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.filter-item select,
+.filter-item input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-end;
+}
+
+.filter-button:hover {
+    background-color: #45a049;
+}
+
+/* Mentors Section */
+#mentors-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 1em;
+}
+
+/* Mentor Card */
+.mentor-card {
+    width: 230px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.mentor-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Image Container (with absolute price tag) */
+.image-container {
+    position: relative;
+}
+
+.mentor-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Price Tag Styling */
+.price-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f39c12;
+    color: white;
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgb(33, 33, 33);
+}
+
+/* Mentor Info Section */
+.mentor-info {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+.mentor-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mentor-specialty,
+.mentor-experience {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* Mentor Rating */
+.mentor-rating {
+    font-size: 14px;
+    color: #f39c12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mentor-rating .star-rating {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.mentor-specialty,
+.mentor-experience,
+.mentor-price {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Mentor Rating Styling */
+.mentor-rating {
+    font-size: 14px;
+    color: #f39c12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.mentor-rating .star-rating {
+    margin-left: 10px;
+    color: #f39c12;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 740px) {
+    .search-bar input {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .mentor-card {
+        width: 60%;
+    }
+
+    #filter-section {
+        background-color: white;
+        box-shadow: 1px 1px 6px gray;
+        width: fit-content;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        align-items: flex-end;
+    }
+
+    #filter-icon {
+        display: inline;
+        position: relative;
+    }
+
+    #filter-container {
+        display: none;
+    }
+
+    #search-icon {
+        display: none;
+    }
+
+    .search-bar input {
+        width: 225px;
+    }
+
+    #mentors-section {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        font-size: 14px;
+    }
+
+    .search-bar input {
+        width: 175px;
+        margin-left: 5px;
+    }
+
+    #logo {
+        width: 40px;
+    }
+
+    .notification,
+    .profile {
+        margin-left: 10px;
+    }
+
+    .mentor-card {
+        width: 300px;
+    }
+
+}

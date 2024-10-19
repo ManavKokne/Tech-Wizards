@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Find Mentor</title>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="listing.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="logo.jpg" id="logo" alt="Logo" />
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search..." />
+                <label for="search">
+                    <img src="search.svg" id="search-icon" />
+                </label>
+            </div>
+
+            <div class="header-icons">
+                <div class="notification">
+                    <img
+                        src="bell.svg"
+                        id="notification-icon"
+                        alt="Notifications"
+                    />
+                    <div class="notification-dropdown">
+                        <p>No new notifications</p>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <img
+                        src="profile.png"
+                        alt="Profile Picture"
+                        class="profile-pic"
+                    />
+                    <div class="profile-dropdown">
+                        <a href="#">Profile</a>
+                        <a href="#" id="logout-btn"
+                            >Logout <img src="logout.png" id="logout-door"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Filter Section -->
+        <section id="filter-section">
+            <img src="funnel.svg" id="filter-icon" alt="Filter" />
+            <div id="filter-container">
+                <div class="filter-item">
+                    <label for="specialty">Specialty</label>
+                    <select id="specialty">
+                        <option value="" disabled selected>
+                            Select specialty
+                        </option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Artificial Intelligence">
+                            Artificial Intelligence
+                        </option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="App Development">App Development</option>
+                        <option value="Cloud Computing">Cloud Computing</option>
+                        <option value="DevOps">DevOps</option>
+                        <option value="Game Development">
+                            Game Development
+                        </option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label for="experience">Experience</label>
+                    <select id="experience">
+                        <option value="" disabled selected>
+                            Select experience level
+                        </option>
+                        <option value="0-1">0-1 years</option>
+                        <option value="1-3">1-3 years</option>
+                        <option value="3-5">3-5 years</option>
+                        <option value="5+">5+ years</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label for="price">Price</label>
+                    <select id="price">
+                        <option value="" disabled selected>
+                            Select price range
+                        </option>
+                        <option value="0-50">₹0 - ₹500</option>
+                        <option value="50-100">₹501 - ₹1000</option>
+                        <option value="100-200">₹1001 - ₹2000</option>
+                        <option value="200+">₹2000+</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label for="rating">Rating</label>
+                    <select id="rating">
+                        <option value="" disabled selected>
+                            Select rating
+                        </option>
+                        <option value="1">⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐</option>
+                        <option value="5">⭐⭐⭐⭐⭐</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" min="" />
+                </div>
+
+                <button class="filter-button">Apply Filters</button>
+            </div>
+        </section>
+
+        <!-- Mentors Section -->
+        <section id="mentors-section"></section>
+    </body>
+    <script src="listing.js"></script>
+</html>

@@ -1,4 +1,3 @@
-console.log("aaaaaaa");
 const passwordInput = document.getElementById("password");
 const passwordVisibilityImg = document.getElementById("pwd-visibility-img");
 

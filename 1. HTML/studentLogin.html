@@ -1,54 +1,72 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="studentLogin.css" />
+        <link rel="stylesheet" href="main.css" />
+        <title>Student Login</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="studentLogin.css" />
-    <title>Student Login</title>
-</head>
-
-<body>
-        <div class="student-login-left">
-        </div>
-        <div class="student-login-right">
-            <div id="logo-container">
-                <img src="logo.jpg" id="logo" alt="SLIET Logo" />
-            </div>
-            <div class="login-card">
-                <div class="login-content">
-                    <h2>Good to see you again!</h2>
-                    <p>
-                        Please enter your details to continue
-                    </p>
-
-                    <form>
-                        <input type="text" id="student-id" placeholder="Email" />
-                        <input type="password" id="password" placeholder="Password" />
-                        <img id="pwd-visibility-img" src="eye-closed.svg">
-                        <div class="options">
-                            <div id="checkbox-container">
-                                <input type="checkbox" id="remember-me">
-                                <label for="remember-me">Remember Me</label>
-                            </div>
-                            <p id="forgot-pwd"><a href="">Forgot password?</a></p>
-                        </div>
-                        <div class="btn-container">
-                            <button type="submit" id="login-btn" class="login-btn">Log In</button>
-                            <button id="login-google-btn">
-                                <img src="google logo.webp" alt="Google Logo">
-                                <p>Continue with Google</p>
-                            </button>
-                        </div>
-                    </form>
+    <body>
+        <div class="login-form">
+            <div class="student-login-left"></div>
+            <div class="student-login-right">
+                <div id="logo-container">
+                    <img src="logo.jpg" id="logo" alt="SLIET Logo" />
                 </div>
-                <p class="signup-text">
-                    Don't have an account?
-                    <a href="studentSignup.html">Sign Up</a>
-                </p>
+                <div class="login-card">
+                    <div class="login-content">
+                        <h2>Good to see you again!</h2>
+                        <p>Please enter your details to continue</p>
+
+                        <form>
+                            <input
+                                type="text"
+                                id="student-id"
+                                placeholder="Email"
+                            />
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Password"
+                            />
+                            <img id="pwd-visibility-img" src="eye-closed.svg" />
+                            <div class="options">
+                                <div id="checkbox-container">
+                                    <input type="checkbox" id="remember-me" />
+                                    <label for="remember-me">Remember Me</label>
+                                </div>
+                                <p id="forgot-pwd">
+                                    <a href="">Forgot password?</a>
+                                </p>
+                            </div>
+                            <div class="btn-container">
+                                <button
+                                    type="submit"
+                                    id="login-btn"
+                                    class="login-btn"
+                                >
+                                    Log In
+                                </button>
+                                <button id="login-google-btn">
+                                    <img
+                                        src="google logo.webp"
+                                        alt="Google Logo"
+                                    />
+                                    <p>Continue with Google</p>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <p class="signup-text">
+                        Don't have an account?
+                        <a href="studentSignup.html">Sign Up</a>
+                    </p>
+                </div>
             </div>
         </div>
-    <script src="./studentLogin.js"></script>
-</body>
+        <script src="./index.js"></script>
+    </body>
 </html>

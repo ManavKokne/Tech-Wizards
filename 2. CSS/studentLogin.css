@@ -1,25 +1,18 @@
-/*    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-body{
+.login-form {
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .student-login-left {
-  background-image: url('mentor.jpeg'); 
+  background-image: url('mentor.jpeg');
+  position: sticky;
+  top: 0;
   height: 100%;
   width: 60vw;
 }
-
 
 .student-login-right {
   width: 40vw;
@@ -30,17 +23,16 @@ body{
   gap: 20px;
 }
 
-.student-login-right>*{
+.student-login-right>* {
   width: 60%;
-  padding: 0 5em;
 }
 
-.login-content>*{
+.login-content>* {
   margin-top: 0.5em;
   text-align: center;
 }
 
-#logo-container{
+#logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,17 +49,17 @@ form {
   margin-top: 40px !important;
 }
 
-input{
+input {
   border: none;
   border-bottom: 2px solid black;
   padding: 1em 0;
 }
 
-input:focus{
-  outline:none
+input:focus {
+  outline: none
 }
 
-  #pwd-visibility-img{
+#pwd-visibility-img {
   position: relative;
   left: 95%;
   bottom: 55px;
@@ -75,26 +67,30 @@ input:focus{
   cursor: pointer;
 }
 
-.options{
+#pwd-visibility-img::selection {
+  background-color: transparent;
+}
+
+.options {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-#checkbox-container{
+#checkbox-container {
   color: #464646;
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-#forgot-pwd>a{
+#forgot-pwd>a {
   color: gray;
   font-size: 0.8em;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.btn-container{
+.btn-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,7 +98,7 @@ input:focus{
   gap: 20px;
 }
 
-.btn-container>*{
+.btn-container>* {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,38 +112,62 @@ input:focus{
   cursor: pointer;
 }
 
-#login-btn{
+#login-btn {
   background-color: black;
   color: white;
 }
 
 
-#login-google-btn img{
+#login-google-btn img {
   width: 20px;
 }
 
-.signup-text{
-  text-align: center;
+.signup-text {
   font-size: 0.9em;
-  bottom: 10px;
+  margin: 3em 0;
   text-align: center;
-  margin-top: 6em ;
 }
 
-.signup-text a{
+.signup-text a {
   color: black;
   font-weight: bold;
 }
 
 /* Hide Browsers Default Password Eye */
 input[type="password"]::-ms-reveal {
-  display: none; /* For Edge */
+  display: none;
+  /* For Edge */
 }
 
 input[type="password"]::-webkit-inner-spin-button {
-  display: none; /* For Chrome/Safari */
+  display: none;
+  /* For Chrome/Safari */
 }
 
 input[type="password"]::-webkit-outer-spin-button {
-  display: none; /* For Chrome/Safari */
+  display: none;
+  /* For Chrome/Safari */
+}
+
+/* Responsive */
+
+@media screen and (max-width: 930px) {
+  .student-login-left {
+    display: none;
+  }
+
+  .student-login-right>* {
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .student-login-left {
+    width: 50vw;
+  }
+
+  .student-login-right {
+    width: 50vw;
+  }
+
 }
