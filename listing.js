@@ -30,7 +30,7 @@ const mentors = [
     experience: 5,
     rating: 5,
     pricePerHour: 2500,
-    img: "mentor1.jpg",
+    img: "/Assets/mentor1.jpg",
   },
   {
     name: "Bob Smith",
@@ -38,7 +38,7 @@ const mentors = [
     experience: 7,
     rating: 4,
     pricePerHour: 2500,
-    img: "mentor2.jpg",
+    img: "/Assets/mentor2.jpg",
   },
   {
     name: "Charlie Brown",
@@ -46,7 +46,7 @@ const mentors = [
     experience: 4,
     rating: 3,
     pricePerHour: 1400,
-    img: "mentor3.jpg",
+    img: "/Assets/mentor3.jpg",
   },
   {
     name: "Dana White",
@@ -54,7 +54,7 @@ const mentors = [
     experience: 6,
     rating: 5,
     pricePerHour: 1700,
-    img: "mentor4.jpg",
+    img: "/Assets/mentor4.jpg",
   },
   {
     name: "Eva Green",
@@ -62,7 +62,7 @@ const mentors = [
     experience: 8,
     rating: 2,
     pricePerHour: 2100,
-    img: "mentor5.jpg",
+    img: "/Assets/mentor5.jpg",
   },
   {
     name: "Frank Black",
@@ -70,7 +70,7 @@ const mentors = [
     experience: 5,
     rating: 4,
     pricePerHour: 1500,
-    img: "mentor6.jpg",
+    img: "/Assets/mentor6.jpg",
   },
   {
     name: "Grace Lee",
@@ -78,7 +78,7 @@ const mentors = [
     experience: 3,
     rating: 3,
     pricePerHour: 800,
-    img: "mentor7.jpg",
+    img: "/Assets/mentor7.jpg",
   },
   {
     name: "Henry Adams",
@@ -86,7 +86,7 @@ const mentors = [
     experience: 6,
     rating: 2,
     pricePerHour: 1500,
-    img: "mentor8.jpg",
+    img: "/Assets/mentor8.jpg",
   },
 ];
 

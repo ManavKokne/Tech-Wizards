@@ -1,0 +1,242 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Popins', sans-serif;
+    background: linear-gradient(135deg, white, whitesmoke);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+.countdown {
+    background: rgb(5, 117, 245);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 ,4px,8px rgb(5, 103, 133);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup button {
+    background: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.navbar {
+    width: 100%;
+    background: rgb(0, 123, 255);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(89, 150, 219,0.5);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-size: 1.8em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.nav-links li a.active {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 123, 255);
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        background: rgb(0, 123, 255);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+    .nav-links.expanded {
+        height: 150px;
+    }
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1400px;
+    gap: 40px;
+    margin: 60px auto;
+    padding: 20px;
+    
+}
+
+.mentor-details, .mentor-photo {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.slots {
+    margin-top: 20px;
+}
+
+.slot {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: rgb(248, 249, 250);
+    border: 1px solid rgb(227, 230, 234);
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.slot:hover {
+    background: rgb(227, 230, 234);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.slot.booked {
+    background: rgb(209, 59, 59);
+    color: hsl(0, 33%, 90%);
+}
+
+.slot.selected {
+    background: rgb(40, 167, 69);
+    color: rgb(255, 255, 255);
+}
+
+
+.book-call-photo,
+.confirm-call,
+.cancel-call {
+    background-color: rgb(8, 179, 209);
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgb(56, 85, 214);
+    
+}
+
+.book-call-photo:hover,
+.confirm-call:hover,
+.cancel-call:hover {
+    background-color: rgb(3, 188, 245);
+    transform: translateY(-3px);
+}
+
+
+.cancel-call {
+    background-color: rgb(248, 34, 56);
+}
+
+.cancel-call:hover {
+    background-color: rgb(200, 35, 51);
+}
+
+.footer {
+    width: 100%;
+    background: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .mentor-details, .mentor-photo {
+        padding: 20px;
+    }
+}

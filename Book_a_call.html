@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Call with Mentor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Popins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Book_a_call.css">
+</head>
+<body>
+
+  
+ 
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">MentorHub</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <div id="countdown" class="countdown hidden">Call starts in: <span id="timer">00:00:00</span></div>
+
+    <div class="container">
+      
+        <div class="mentor-photo glass-effect">
+            <img src="/4. ASSETS/mentor2.jpg" alt="Mentor Photo">
+            
+            <button class="book-call-photo" onclick="showConfirmButton()">Book Call</button>
+        </div>
+
+        <div class="mentor-details glass-effect">
+            <h2>Mentor Name</h2>
+            <p>Expert in Web Development, with over 10 years of experience helping students and professionals excel in their careers. Get personalized guidance, project feedback, and industry insights.</p>
+            
+     
+            <div class="slots">
+                <h3>Available Slots:</h3>
+                <div class="slot" onclick="selectSlot(this, '10:00 AM')">10:00 AM - 11:00 AM (2/5 slots booked)</div>
+                <div class="slot booked">11:00 AM - 12:00 PM (Fully booked)</div>
+                <div class="slot" onclick="selectSlot(this, '12:00 PM')">12:00 PM - 1:00 PM (1/5 slots booked)</div>
+                <div class="slot" onclick="selectSlot(this, '2:00 PM')">2:00 PM - 3:00 PM (3/5 slots booked)</div>
+            </div>
+            
+            <button id="confirm-call" class="confirm-call hidden " onclick="confirmCall()">Confirm Call</button>
+          
+            <button id="cancel-call" class="cancel-call hidden" onclick="cancelCall()">Cancel Call</button>
+        </div>
+    </div>
+
+ 
+    <div id="confirmation-popup" class="popup hidden">
+        <p>Your call has been confirmed!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+  
+    <div id="notification-popup" class="popup hidden">
+        <p>Reminder: Your call with the mentor starts in 10 minutes!</p>
+        <button onclick="closeNotification()">Close</button>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Contact Us: info@mentorwebsite.com | +1 234 567 890</p>
+            <p>© 2024 Mentor Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Book_a_call.js"></script>
+</body>
+</html>
